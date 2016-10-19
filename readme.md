@@ -18,6 +18,7 @@ Usage
 
 
 	sudo modprobe -r -f vfe_v4l2
+
 	sudo modprobe -r -f s5k4ec
 
 
@@ -25,6 +26,7 @@ Usage
 
 
 	sudo modprobe s5k4ec
+
 	sudo modprobe vfe_v4l2
 
 
@@ -34,15 +36,22 @@ Usage
 
 
 	sudo modprobe s5k4ec
+
 	sudo modprobe vfe_v4l2
 
 
 * known issues
-	pulling the images with a v4l2 capture image was possible for the followint win sizes:
+
+	pulling the images with a v4l2 capture image was possible for the following win sizes:
+
 	UXGA: 1280x960
+
 	720P: 1280x720
+
 	VGA: 640x480
-	this need to be investigated, but does not seems to be a specific driver problem because guvcview gets video from all available win sizes.
+
+	this needs to be investigated, but does not seem to be driver issue because guvcview gets video from all available win sizes.
+
 	
 
 This was tested with guvcview and cap, you can try motion and see if it works as expected.
